@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container-main">
+      <div class="menu-left">
+        <div class="dropitem" id="dropitem">
+          <!-- <img src="img/food.jpg" alt="" draggable="true" class="weapon" id="food1"> -->
+          <img src="img/rifle.jpg" alt="" draggable="true" class="weapon" id="rifle">
+          
+        </div>
+      </div>
+      <div class="main">
+        <div class="top-menu">
+          <ul>
+            <li><i class="fa-solid fa-briefcase"></i></i></li>
+            <!-- <li><i class="fa-solid fa-briefcase"></i></i></li> -->
+          </ul>
+        </div>
+        <div class="items" id="items">
+          <!-- <button class="twocolordiv"></button> -->
+            <img src="img/food.jpg" alt="" draggable="true" class="weapon" id="food1">          
+            <img src="img/food3.jpg" alt="" draggable="true" class="weapon" id="food3">
+            <img src="img/food2.jpg" alt="" draggable="true" class="weapon" id="food2">
+        </div>
+      </div>
+      <div class="menu-right">
+        <div class="remove-btn" id="remove-btn"><i class="fa-solid fa-calendar-xmark"></i></div>
+        <button class="inventory-btn" id="inventory-btn"><i class="fa-solid fa-suitcase"></i></button>
+        <button class="add-inventory-btn" id="add-inventory-btn"><i class="fa-solid fa-suitcase"></i></button>
+      </div>
+    </div>
+  
+    <div class="inventory " id="inventory">
+      <div class="inventory-info">
+        <div class="xbutton">
+          <button class="close-btn" id="close-btn">x</button>
+        </div>
+        <div class="image-logo">
+          <img src="img/2022-06-24_15-50-06.png" alt="" class="logo">
+        </div>
+       <div class="equit-slots">
+          <div class="equip-slot" id="equip-slot1">
+            <img src="img/bow.jpg" alt="" id="equip-weapon1"> 
+          </div>
+          <div class="equip-slot" id="equip-slot2">
+            <img src="img/rifle.jpg" alt="" id="equip-weapon2"> 
+          </div>
+          <div class="equip-slot" id="equip-slot3">
+            <img src="img/food.jpg" alt="" id="equip-weapon3"> 
+          </div>
+          <div class="equip-slot" id="equip-slot4">
+            <img src="img/bow.jpg" alt="" id="equip-weapon4"> 
+          </div>
+       </div>
+        
+      </div>
+    </div>
+  
+    <div class="upgrade-bag" id="upgrade-bag">
+      <div class="twocolordiv bag"></div>
+      <div class="twocolordiv bag"><span id="mySPAN"><i class="fa-solid fa-lock"></i></span></div>
+      <div class="twocolordiv bag"><span id="mySPAN"><i class="fa-solid fa-lock"></i></span></div>
+      <div class="twocolordiv bag"><span id="mySPAN"><i class="fa-solid fa-lock"></i></span></div>
+
+    </div>
+  </div>
+  
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="level-btn" id="level-btn">ปุ่ม Hide</button>
+
+  <div class="settings" id="settings">
+    <form id="level-form">
+        <label for="">Level:</label>
+        <select name="" id="level">
+            <option value="easy">ง่าย</option>
+            <option value="medium"> ปานกลาง</option>
+            <option value="hard">ยาก</option>
+        </select>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>เกมพิมเร็ว</h2>
+    
+    <h1 id="word" class="word">ยางลบ</h1>
+    <input type="text" name="" id="text" autocomplete="off" placeholder="ป้อนคำ">
+    <p class="time-contaier">
+      <span class="time" id="time">15 วินาที</span>
+    </p>
+    <p class="scores-container">
+      <span class="score" id="score">0 คะแนน</span>
+    </p>
+    <div class="gameover" id="gameover">GG noobs</div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

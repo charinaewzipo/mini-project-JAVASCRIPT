@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,800&family=Lora:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+img{
+  width: 350px;
+}
+.swap-btn{
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.currency{
+  display: flex;
+  padding:40px 0 ;
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: space-between;
+}
+.currency select{
+  padding: 10px 20px 10px 10px;
+  font-size: 16px;
+  /* background: transparent; */
+}
+.currency input{
+  border:0;
+  background : transparent;
+  font-size: 30px;
+  text-align: right;
+}
+.swap-currency{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rate{
+  font-size: 30px;
+}
+
+select:focus,input:focus,button:focus{
+  outline: 0;
+}

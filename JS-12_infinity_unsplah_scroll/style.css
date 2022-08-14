@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+h1{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+.container{
+  margin:10px 20%;
+}
+.container img{
+  width: 100%;
+  margin-top: 5px;
+}
+@media screen and (max-width:600px){
+  .container{
+    margin: 10px;
+  }
+}

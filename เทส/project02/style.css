@@ -1,0 +1,232 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+.container{
+  position: relative;
+  margin-left: 2%;
+  height: 90vh;
+  width: 90vw;
+  border: 1px solid red;
+}
+.top-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top:0;
+  left: 20%;
+  /* border: 1px solid red; */
+  width: 80%;
+  height: 20%;
+}
+.statusgang{
+  position: absolute;
+  right: 15%;
+  text-align: right;
+}
+.logo{
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 5%;
+}
+.menu-list{
+  /* border: 1px solid green; */
+  position: absolute;
+  top:20%;
+  left:-2%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+}
+.menu-list button{
+  margin: 5% 1%;
+  border: 1px solid red;
+  padding: 2% 4%;
+  background:transparent ;
+  color: white;
+  cursor: pointer;
+  font-size: 120%;
+  white-space: nowrap;
+}
+.menu-button button{
+  margin: 5% 1%;
+  border: 1px solid red;
+  padding: 2% 4%;
+  background:transparent ;
+  color: white;
+  cursor: pointer;
+  font-size: 120%;
+  white-space: nowrap;
+}
+
+.menu-list button:hover ,.menu-button button:hover{
+  opacity: 0.5;
+}
+
+.main-ganglist{
+  border: 1px solid gray;
+  position: absolute;
+  top:20%;
+  left:20%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 2%; */
+}
+.info-gang{
+  display: flex;
+  position: relative;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.numgroup{
+  position: absolute;
+  left: 50%;
+}
+.levelgroup{
+  position: absolute;
+  left: 80%;
+}
+.logo-small{
+  position: absolute;
+  left: 90%;
+  width: 5%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.menu-button{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: absolute;
+  border: 1px solid green;
+  width: 100%;
+  height: 20%;
+  bottom: -10%;
+  /* right: 2%; */
+}
+.hidden{
+  visibility: hidden;
+}
+.active{
+  visibility: visible;
+}
+.main-mygang{
+  border: 1px solid blue;
+  position: absolute;
+  top:20%;
+  left:20%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  /* padding: ; */
+}
+.group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+  width: 7%;
+  position: absolute;
+  right:5%;
+  top: 5%;
+  /* border: 1px solid red; */
+}
+.group img{
+  width: 100%;
+  height: 100%;
+  background-image: cover;
+}
+.group-list{
+  position: absolute;
+
+  top: 10%;
+  border: 1px solid red;
+  width: 100%;
+  height:80%;
+
+}
+.person{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+.create-gang{
+ border: 1px solid blue;
+ position: absolute;
+ top:40%;
+ left:50%;
+ display: flex;
+ flex-direction: column;
+ padding: 2%;
+ align-items: center;
+ justify-content: center;
+ z-index: 2;
+ background-color: rgba(0, 0, 0, 0.9);
+}
+.create-gang #x{
+  position: absolute;
+  top:0;
+  right: 0;
+  cursor: pointer;
+}
+.create-gang #btncreategang{
+ margin-top: 10%;
+ cursor: pointer;
+}
+.createganginfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.person select{
+  border:0;
+  padding: 2%;
+  color: white;
+  background-color: transparent;
+}
+.disableselect{
+  pointer-events: none;
+  appearance:none;
+}
+.person option{
+  color: black
+}
+.person button{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pagination {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pagination a  ,.number-pagination{
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active ,.number-pagination.active{
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover{background-color: #4CAF50}
+

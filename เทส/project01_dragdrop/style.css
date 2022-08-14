@@ -1,0 +1,298 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+.container{
+  display: flex;
+  position: relative;
+  background-color: #c0c0c0;
+  min-height: 100vh;
+  margin:0 auto;
+}
+.container-main{
+  display: flex;
+  position: absolute;
+  /* border: 1px solid red; */
+  top:30%;
+  left: 5%;
+  bottom: 5%;
+  width: 60%;
+  
+}
+.menu-left{
+  /* position: absolute; */
+  /* border: 1px solid red; */
+  margin:10px;
+  padding: 5px;
+  width: 10%;
+  overflow-y: auto;
+}
+.menu-left .dropitem{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height: 100%;
+  /* border: 1px solid red; */
+  background-color: #8e8e8e;
+  border-radius: 5px;
+}
+.menu-left .dropitem img{
+
+  width: 100%;
+  height: 16%;
+  /* margin: 10px; */
+  padding: 10px;
+}
+.list-item{
+  margin: 10px;
+  padding: 20px;
+  background-color: #9d9d9d;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.main{
+  /* border: 1px solid red; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+}
+.top-menu{
+  border-radius: 5px;
+  background-color: #636363;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 20%;
+}
+.top-menu ul{
+  display: flex;
+  list-style: none;
+  justify-content: left;
+  align-items: center;
+}
+.top-menu li{
+  color: white;
+  font-size: 50px;
+  margin-right: 20px;
+}
+.items{
+  position: absolute;
+  top:20%;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  /* background-color: red; */
+  background-color: #9d9d9d;
+  overflow-x: auto;
+}
+.items img{
+  width: 10%;
+  height: 15%;
+  margin: 20px;
+}
+.items div{
+  box-sizing: border-box;
+  width: 10%;
+  height: 20%;
+  /* border:1px solid yellow; */
+  border: 0;
+  margin: 2% 2%;
+}
+.twocolordiv {
+  position: relative;
+  z-index: 9;
+  background: #8e8e8e;
+  }
+  
+  .twocolordiv:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 80%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #636363;
+  }
+  .menu-right{
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 10%;
+    justify-content: space-between;
+  }
+  .remove-btn{
+    height: 60%;
+    background-color: #9d9d9d;
+    border-radius: 5px;
+    border: 0;
+    margin: 20px;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inventory-btn{
+    height: 10%;
+    background-color: #9d9d9d;
+    margin: 20px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-size: 20px;
+  }
+  .add-inventory-btn{
+    height: 10%;
+    background-color: #9d9d9d;
+    margin: 20px ;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-size: 20px;
+  }
+  .inventory{
+    position: absolute;
+    right: 2%;
+    top:2%;
+    height: 60%;
+    width: 20%;
+    /* border:1px solid red; */
+  }
+  .inventory.hide{
+    opacity: 0;
+  }
+.inventory-info{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border:1px solid red; */
+  height: 100%;
+  width: 100%;
+  background-color: #adadad;
+  border-radius: 5px;
+}
+.xbutton{
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  /* border:1px solid red; */
+  background: #636363;
+  border-radius: 5px 5px 0 0;
+}
+.close-btn{
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  font-size: 20px;
+  top:0;
+  right:0;
+  border: 0;
+  /* border-radius: 0 5px 0 0; */
+  background-color: inherit;
+  color: white;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.image-logo{
+  position: absolute;
+  top: 10%;
+  height: 40%;
+  /* border:1px solid red; */
+  width: 100%;
+}
+.image-logo img{
+  width: 80%;
+}
+.equit-slots{
+  position: absolute;
+  /* bottom: 10%; */
+  display: flex;
+  bottom: 10%;
+  height: 30%;
+  width: 100%;
+  /* border:1px solid green; */
+}
+.equip-slot{
+  width: 20%;
+  margin: 20px;
+  /* background-color: red; */
+}
+.equip-slot img{
+  width: 100%;
+  height: 80%;
+
+}
+.equip-weapon{
+  /* box-sizing: border-box; */
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: red;
+  border: 0;
+  margin: 10% 2%;
+  border-radius: 5px;
+}
+.list-item img{
+  position: relative;
+  bottom:20%;
+  width: 100%;
+  height: 100%;
+}
+.equip-weapon img {
+  position: relative;
+  /* bottom:20%; */
+  width: 100%;
+  height: 80%;
+}
+.upgrade-bag{
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  background-color: #8e8e8e;
+  width: 20%;
+  height: 10%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px;
+}
+.bag{
+  /* position: absolute; */
+  width: 20%;
+  height: 80%;
+  border: 0;
+  margin: 10px;
+  /* padding: 20px; */
+  background-color: #9d9d9d;
+  opacity: 1;
+}
+.upgrade-bag.hide{
+  opacity: 0;
+}
+.bag i{
+  width: 100%;
+  height: 80%;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bag img{
+  width: 100%;
+  height: 100%;
+}

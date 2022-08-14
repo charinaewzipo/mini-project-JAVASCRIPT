@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-container">
+      <img src="./img/2022-07-08_14-26-15.png" alt="" class="logo-big">
+      <div class="statusgang">
+        <h3>NAME GANG</h3>
+        <h5>LEVEL 1</h5>
+        <h4>V POING 0/100</h4>
+      </div>
+      <div class="logo">
+        <h3>LOGO</h3>
+      </div>
+      
+    </div>
+    <div class="menu-list">
+      <button id="ganglist">GANG LIST</button>
+      <button id="mygang">MY GANG</button>
+    </div>
+
+    <div class="main-ganglist active" id="main-ganglist">
+      <div class="info-gang">
+        <!-- <p class="namegang">1. NAME GANG</p>
+        <p class="numgroup" >1/10</p>
+        <p class="levelgroup">LEVEL1</p>
+        <img src="./img/2022-07-08_14-26-15.png" alt="" class="logo-small"> -->
+      </div>
+      <div class="info-gang">
+        <!-- <p>1. NAME GANG</p>
+        <p>1/10</p>
+        <p>LEVEL1</p>
+        <img src="./img/2022-07-08_14-26-15.png" alt="" class="logo-small"> -->
+      </div>
+      <div class="pagination">
+        <!-- <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a> -->
+      </div>
+      <div class="menu-button">
+        <!-- <button id="showcreategang">CREATE GANG</button> -->
+        <!-- <button id="showcreategang">CREATE GANG</button> -->
+       
+      </div>
+    </div>
+
+    <div class="main-mygang hidden" id="main-mygang">
+      <div class="group">
+        <img src="./img/group.png" alt="">
+        <p>1/10</p>
+        <button>+</button>
+      </div>
+      <div class="group-list">
+          <div class="person">
+            <p class="nameperson" value="1. NOT WELL">1. NOT WELL</p>
+            <select name="" class="position disableselect">
+              <option value="leader">LEADER</option>
+              <option value="master">MASTER</option>
+              <option value="member">MEMBER</option>
+            </select>
+      
+          </div>
+          <div class="person">
+            <p class="nameperson"  value="2. NOT WELL">2. NOT WELL</p>
+            <select name="" class="position disableselect">
+              <option value="leader">LEADER</option>
+              <option value="master" >MASTER</option>
+              <option value="member">MEMBER</option>
+            </select>
+          </div>
+        
+      </div>
+      <div class="pagination" id="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" >1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+      <div class="menu-button">
+        <button id="authorise" onclick="showselectposition()">AUTHORISE</button>
+        <button>INVITE</button>
+        <button>EXIT GANG</button>
+      </div>
+    </div>
+
+    <div class="create-gang hidden" id="create-gang">
+      <form class="createganginfo " >
+        <label for="">ชื่อแก๊ง </label>
+        <input type="text" id="createnamegang">
+        <label for="">รูปภาพ (url) </label>
+        <input type="text" id="urlgang">
+      </form>
+      <button id="x">X</button>
+      <button id="btncreategang" type="submit">สร้างแก๊ง</button>
+      
+    </div>
+    
+    
+   
+
+
+  </div>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,800&family=Lora:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.container{
+  margin:30px auto;
+  width: 350px;
+}
+h3{
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  margin: 40px 0 10px 0;
+}
+.income-outcome{
+  display: flex;
+  justify-content: space-between;
+  background-color: wheat;
+  margin: 20px 0;
+  text-align: center;
+  padding: 20px ;
+  
+}
+.income-outcome > div{
+  flex: 1;
+  text-align: center;
+}
+.income-outcome > div:first-child{
+  border-right: 1px solid gray;
+}
+.money-plus{
+  color: #2ecc71;
+}
+.money-minus{
+  color:red;
+}
+
+input[type="text"] , input[type="number"] {
+  border:1px solid #dedede;
+  border-radius: 5px;
+  display: block;
+  margin: 10px 0;
+  padding:10px;
+  width: 100%;
+}
+#increse-btn-history{
+  background-color: purple;
+  color: wheat;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  width: 100%;
+}
+.btn-delete{
+  background-color: red;
+  color: wheat;
+  cursor: pointer;
+  padding:4px;
+  border:0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(+200%,-50%);
+  opacity: 0;
+  transition:opacity 0.3s ease;
+}
+.list{
+  padding: 0;
+  margin-bottom: 40px;
+}
+.list li{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+  position: relative;
+  /* border:1px solid red */
+}
+.list li:hover .btn-delete{
+  opacity: 1;
+}
+.list li.plus{
+  border-right:5px solid green;
+}
+.list li.minus{
+  border-right:5px solid red;
+}
